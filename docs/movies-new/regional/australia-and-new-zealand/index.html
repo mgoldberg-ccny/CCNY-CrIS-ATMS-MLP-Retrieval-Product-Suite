@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Australia &amp; New Zealand — Regional Movies</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --bg: #f4f7fb;
+  --panel: #ffffff;
+  --text: #162033;
+  --muted: #5e6b82;
+  --line: #d9e1ec;
+  --accent: #075ea8;
+  --accent2: #0b7f76;
+  --shadow: 0 8px 24px rgba(15, 31, 55, 0.10);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1520;
+    --panel: #182230;
+    --text: #edf3fb;
+    --muted: #b2bfd0;
+    --line: #334155;
+    --accent: #70b7f0;
+    --accent2: #74d3ca;
+    --shadow: none;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+}
+header {
+  background: linear-gradient(125deg, #073b66, #0b6f77);
+  color: white;
+  padding: 32px 20px;
+}
+header .inner, main, footer {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 4vw, 3rem); }
+header p { margin: 0; max-width: 800px; opacity: 0.92; }
+nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+nav a {
+  color: white;
+  border: 1px solid rgba(255,255,255,.45);
+  border-radius: 999px;
+  padding: 8px 13px;
+  text-decoration: none;
+}
+main { padding: 28px 18px 48px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 18px;
+}
+.card {
+  display: block;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+.card:hover { transform: translateY(-2px); }
+.card h2, .card h3 { margin: 0 0 8px; }
+.card p { margin: 0; color: var(--muted); }
+.badge {
+  display: inline-block;
+  margin-top: 13px;
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 5px 9px;
+  font-size: .9rem;
+}
+section { margin-bottom: 34px; }
+.section-title { margin: 0 0 15px; }
+.movie-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+video {
+  display: block;
+  width: 100%;
+  max-height: 78vh;
+  background: #000;
+  border-radius: 10px;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 9px 13px;
+}
+.button.secondary { background: var(--accent2); }
+.meta { color: var(--muted); margin: 8px 0 14px; }
+footer { padding: 0 18px 30px; color: var(--muted); font-size: .92rem; }
+.empty {
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  padding: 20px;
+  color: var(--muted);
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="inner">
+    <h1>Australia &amp; New Zealand — Regional Movies</h1>
+    <p>Near-real-time N20/N21 CrIS/ATMS 2-m temperature visualization GIF movies.</p>
+    <nav>
+      <a href="../../../">Main site</a>
+      <a href="../../index.html">Movies (New)</a>
+      <a href="../../regional/index.html">Regional Movies</a>
+      <a href="../../polar/index.html">Polar Movies</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<div class="movie-panel">
+  <h2>Day / Ascending</h2>
+  <p class="meta">Australia &amp; New Zealand · June 18, 2026 to July 15, 2026</p>
+  <img
+    src="australia-and-new-zealand_day-ascending_20260618_20260715.gif"
+    alt="Australia &amp; New Zealand Day / Ascending animated temperature movie"
+    style="display:block;width:100%;height:auto;border-radius:10px;background:#000;"
+  >
+  <div class="actions">
+    <a class="button secondary" href="australia-and-new-zealand_day-ascending_20260618_20260715.gif" download>Download GIF</a>
+  </div>
+</div>
+
+
+<div class="movie-panel">
+  <h2>Night / Descending</h2>
+  <p class="meta">Australia &amp; New Zealand · June 18, 2026 to July 15, 2026</p>
+  <img
+    src="australia-and-new-zealand_night-descending_20260618_20260715.gif"
+    alt="Australia &amp; New Zealand Night / Descending animated temperature movie"
+    style="display:block;width:100%;height:auto;border-radius:10px;background:#000;"
+  >
+  <div class="actions">
+    <a class="button secondary" href="australia-and-new-zealand_night-descending_20260618_20260715.gif" download>Download GIF</a>
+  </div>
+</div>
+
+</main>
+<footer>Generated automatically from the CCNY CrIS/ATMS retrieval workflow.</footer>
+</body>
+</html>
